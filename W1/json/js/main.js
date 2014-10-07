@@ -7,8 +7,9 @@
 //    console.log(person.skills[0].tests[0].score);
 
 
-    for (var p in person.skills[0].tests[0]){
-        return
+    for (var i=0; i < person.skills.length;i++){
+
+
     }
     console.log()
 })();
