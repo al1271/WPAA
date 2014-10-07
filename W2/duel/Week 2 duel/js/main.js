@@ -15,14 +15,14 @@
     var round=0;
 
     function fight(){
-        alert(fighter1.name+":"+fighter1.health+"  *START*  "+ fighter2.name+":"+fighter2.health);
+        alert(fighter1.name + ":"+ fighter1.health +"  *START*  "+ fighter2.name+":" + fighter2.health);
         for (var i = 0; i < 10; i++)
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
             var minDamage1 = fighter1.damage * .5;
             var minDamage2 = fighter2.damage * .5;
-            var f1 = Math.floor(Math.random()*(fighter1.damage-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(fighter2.damage-minDamage2)+minDamage2);
+            var f1 = Math.floor(Math.random()*(fighter1.damage - minDamage1) + minDamage1);
+            var f2 = Math.floor(Math.random()*(fighter2.damage - minDamage2) + minDamage2);
 
             //inflict damage
             fighter1.health-=f1;
