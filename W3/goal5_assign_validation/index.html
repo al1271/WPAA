@@ -1,0 +1,98 @@
+<!doctype html>  
+
+<head>
+    <link rel="stylesheet" href="style.css?v=2">
+	
+	<title>User Registration</title>
+
+</head>
+
+<body>
+
+    <div style="width:930px; height:135px; margin:0 auto; padding:0px;">
+        <div style="float:right; margin:0px; padding:0px; width:30px; height:60px;"></div>
+        <div id="upperright"></div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="wrap">
+
+        <div style="float:left; margin:0px; padding:0px; height:12px; width:194px;"></div>
+
+        <div id="nav2">
+            <a href="#examples">examples</a><a href="#downloads">downloads</a><a href="#howtouse">how to use</a><a href="#donate">donate</a><a href="#feedback">feedback</a>
+        </div>
+
+        <div id="nav1"><a href="#">home</a><a href="#">about</a></div>
+
+        <div class="clear"></div>
+
+        <div id="leftnav" style="background:none;"><div id="leftnavinside"></div>
+     </div>
+
+	<div id="contentbgwrap">
+	<div id="contentbg">
+		<div id="contentwrap">
+			
+			<div id="dss">
+                <h1 class="dssheader">User Registration</h1>
+                <p>Please fill out the following fields.</p>
+                <div class="f_reqs formfull">* = required field</div>
+                <div class="separator"></div>
+             
+                <form id="myform" name="myform" method="post">
+                    <ul>
+
+                        <li class="formleft">
+                              <label>Username: </label>
+                              <input type="text" name="f_username" id="f_username" class="words required" />
+                              <label class="f_reqs" id="f_username_req">*</label>
+                              <span class="f_errors" id="f_username_error">Example: John Smith, Mickey Mouse</span>
+                        </li>
+                        <li class="formleft">
+                            <label>Email: </label>
+                            <input type="text" name="f_email" id="f_email" class="required email" />
+                            <label class="f_reqs" id="f_email_req">*</label>
+                            <span class="f_errors" id="f_email_error">Example: user@domain.com</span>
+                        </li>
+                        <li class="formright">
+                            <label>Phone: </label>
+                            <input type="text" name="f_phone" id="f_phone" class="phone" />
+                            <label class="f_reqs" id="f_phone_req"></label>
+                            <span class="f_errors" id="f_phone_error">Must match this format: (123)456-7890</span>
+                        </li>
+                        <li class="formleft">
+                            <label>Password: </label>
+                            <input type="password" name="f_password" id="f_password" class="password words required" />
+                            <label class="f_reqs" id="f_password_req">*</label>
+                            <div id="pmeter"><div id="pbar"></div></div>
+                            <span class="f_errors" id="f_password_error"></span>
+                        </li>
+                        <li class="formright">
+                            <label>Social Security Number: </label>
+                            <input type="text" name="f_ssn" id="f_ssn" class="ssn" />
+                            <label class="f_reqs" id="f_ssn_req"></label>
+                            <span class="f_errors" id="f_ssn_error">Must match this format: 123-56-7890</span>
+                        </li>
+
+                        <li class="formleft">
+                          <input type="submit" id="f_submit" value="Register" />
+                        </li>
+                    </ul>
+                </form>
+   		    </div>
+
+		    <div class="clear" style="height:60px;"></div>
+
+        </div>
+	</div>
+    </div> <!--/contentbgwrap-->
+	<div id="googlewrap" style="background:none;"><div id="googlewrapinside"></div></div>
+</div>
+
+
+<!-- javascript below here -->
+<script type="text/javascript" src="js/validate.js"></script>
+
+</body>
+</html>
